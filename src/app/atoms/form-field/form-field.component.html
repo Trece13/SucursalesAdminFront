@@ -1,0 +1,43 @@
+<div class="containerText">
+  <label class="label-name" [for]="campo?.nombre">
+    <span>
+      {{ campo.descripcion }}
+    </span>
+  </label>
+  <ng-container [ngSwitch]="tipo">
+    <select
+      *ngSwitchCase="'select'"
+      [id]="campo?.nombre"
+      [formControl]="control"
+    >
+      <option value="" [disabled]="campo.disable" selected>
+        Seleccione una opción
+      </option>
+      <option
+        [disabled]="campo.disable"
+        *ngFor="let item of campo.items"
+        value="{{ item.monedaId }}"
+      >
+        {{ item?.descripcion }}
+      </option>
+    </select>
+    <input
+      *ngSwitchCase="'text'"
+      [formControl]="control"
+      [id]="campo?.nombre"
+      [placeholder]="campo.descripcion"
+      [readonly]="campo.disable"
+      [maxlength]="250"
+    />
+    <input
+      *ngSwitchCase="'date'"
+      type="date"
+      [formControl]="control"
+      [id]="campo?.nombre"
+      [placeholder]="campo.descripcion"
+      [readonly]="campo.disable == true"
+      [max]="campo.max"
+      [min]="campo.min"
+    />
+  </ng-container>
+</div>

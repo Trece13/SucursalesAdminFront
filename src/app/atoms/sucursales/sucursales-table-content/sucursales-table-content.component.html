@@ -1,0 +1,14 @@
+<tr *ngFor="let sucursal of getContentTable">    
+    <td>
+        <input type="checkbox" (change)="selectedRecord(sucursal.codigo)" />
+    </td>
+    <td>{{sucursal.codigo}}</td>
+    <td>{{sucursal.descripcion}}</td>
+    <td>{{sucursal.direccion}}</td>
+    <td>{{sucursal.identificacion}}</td>
+    <td>{{sucursal.fechaCreacion}}</td>
+    <td>{{sucursal.monedaId}}</td>
+</tr>
+<tr *ngIf="getContentTable?.length === 0">
+    <td colspan="5">No data</td>
+  </tr>

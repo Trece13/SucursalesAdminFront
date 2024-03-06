@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.border {
+  border: 1px solid #c5c5c5;
+}
+
+.radius {
+  border-radius: 10px;
+}
+
+.titulo {
+  font-weight: 700;
+  font-size: 30px;
+  color: #001e50;
+  margin-bottom: 0;
+}
+
+.subtitulo {
+  font-weight: 700;
+  font-size: 16px;
+  color: #001e50;
+  margin-bottom: 0;
+}
+
+.btn {
+  font-weight: 500;
+  color: rgb(0, 0, 0) !important;
+  width: 50% !important;
+  border: 1px solid transparent !important;
+  padding: 12px !important;
+  border-radius: 12px !important;
+}
+
+/* Especial para botones de Filtro, no contiene :hover */
+.btn-out {
+  font-weight: 500;
+  color: rgb(0, 0, 0) !important;
+  width: 270px !important;
+  border: 1px solid transparent !important;
+  padding: 12px !important;
+  border-radius: 12px !important;
+  gap: 10px !important;
+}
+
+
+.btn:hover {
+  color: #02204f !important;
+  background: white !important;
+  border: 1px solid #02204f !important;
+}
+.btn-main {
+  font-weight: 500;
+  color: rgb(0, 0, 0) !important;
+  width: 100% !important;
+  border: 1px solid transparent !important;
+  padding: 12px !important;
+  border-radius: 12px !important;
+}
+
+/* Especial para botones de Filtro, no contiene :hover */
+.btn-main-out {
+  font-weight: 500;
+  color: rgb(0, 0, 0) !important;
+  width: 270px !important;
+  border: 1px solid transparent !important;
+  padding: 12px !important;
+  border-radius: 12px !important;
+  gap: 10px !important;
+}
+
+
+.btn-main:hover {
+  color: #02204f !important;
+  background: white !important;
+  border: 1px solid #02204f !important;
+}
+
+
+.btn-azul:hover {
+  background: white;
+  color: blue !important;
+  border: 1px solid blue !important;
+}
+
+.btn-azul {
+  background: skyblue;
+  color: white !important;
+  border: 1px solid skyblue !important;
+}
+
+.ct-componentes {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow-y: scroll;
+  padding: 10px 0 50px;
+}
+
+.container-tablas,
+.container-tabs {
+  overflow: overlay;
+  margin-top: 15px;
+}
+
+.forms-sucursal input,
+.forms-sucursal select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #acacac;
+  /* margin-bottom: 20px; */
+  border-radius: 10px;
+  color: #464646;
+  font-size: 15px;
+  outline: none;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.09);
+}

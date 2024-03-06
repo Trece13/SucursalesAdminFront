@@ -1,0 +1,139 @@
+@media (max-width:768px) {
+    .ct-login {
+        padding: 50px 30px;
+    }
+}
+
+@media (max-width:1024px) {
+    .imagen-menu {
+        display: none;
+    }
+
+    .ct-menu .d-flex {
+        flex-direction: column;
+    }
+
+    .ct-menu {
+        margin: auto;
+    }
+
+    .container-menu {
+        overflow: visible;
+    }
+}
+
+
+@media (max-width:768px) {
+    .menu-lateral {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .menu-lateral:before {
+        content: none;
+    }
+
+    .content-menu-lateral {
+        position: relative;
+    }
+
+    .content-menu-lateral img {
+        padding: 20px;
+    }
+
+    .footer-blue {
+        position: relative;
+        margin-top: 30px;
+    }
+
+    .footer-menu-lateral {
+        background: #008651;
+    }
+
+    .footer-menu-lateral h3 {
+        color: white;
+        font-style: italic;
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    .footer-menu-lateral {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .footer-menu-lateral a {
+        font-size: 16px;
+    }
+
+    .ct-menu {
+        padding: 0 25px;
+    }
+
+    .contenido-menu h4,
+    .contenido-menu a {
+        text-align: center;
+        margin: auto;
+        display: block;
+    }
+
+    ul.items-menu {
+        margin: 30px 0;
+    }
+
+    .breadcrumb ul li a {
+        font-size: 13px;
+    }
+
+    /*Menú vertical responsive*/
+    .container-menu-vertical .menu-lateral {
+        display: none;
+    }
+
+    /*Filtro tablas*/
+    .tableFiltro input {
+        padding: 8px 10px;
+        font-size: 13px;
+        margin-top: 5px;
+    }
+
+    .tableFiltro th .bg-gris {
+        padding: 12px;
+    }
+
+    .tableFiltro th span {
+        font-size: 14px;
+    }
+
+    .ct-componentes {
+        padding: 0;
+    }
+
+}
+
+@media (max-width:580px) {
+    .btn {
+        margin: auto;
+    }
+
+    .botones {
+        width: 100%;
+    }
+
+    /*Filtro tablas*/
+    .btn-filtro {
+        padding: 4px 20px;
+        margin: 20px auto 0;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .cont-search.filtro {
+        margin: 20px 0 0;
+    }
+
+    .titulo {
+        font-size: 22px;
+    }
+}

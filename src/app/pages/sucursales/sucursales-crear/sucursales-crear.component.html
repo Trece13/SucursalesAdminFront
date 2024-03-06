@@ -1,0 +1,12 @@
+<div class="container animate__animated animate__fadeIn">
+  <div class="row">
+    <div class="col-6">
+      <div class="titulo">
+        {{ pagina.titulo }}
+      </div>
+      <div class="col-6">
+        <app-sucursales-form [tipoForm]="pagina.tipo" (dataEmitida)="recibirData($event)"></app-sucursales-form>
+      </div>
+    </div>
+  </div>
+</div>

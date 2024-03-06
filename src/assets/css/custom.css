@@ -1,0 +1,32 @@
+table thead * tr th {
+  background-color: skyblue!important;
+  color: rgba(255, 255, 255, 1) !important;
+  font-size: 15px;
+  height: 56px;
+  vertical-align: middle;
+  padding: 0px 15px;
+}
+
+table tbody * tr td {
+  padding: 0px 15px;
+}
+table tr {
+  font-size: 15px;
+  height: 56px;
+}
+
+table {
+  width: 100%;
+  background: white;
+  vertical-align: middle;
+  font-size: 15px;
+  height: 56px;
+}
+
+table tbody tr:nth-child(odd) {
+  background-color: white;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}

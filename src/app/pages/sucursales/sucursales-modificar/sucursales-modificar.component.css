@@ -1,0 +1,13 @@
+.container {
+  padding: 46px 70px 70px 70px;
+}
+
+.containerEdit {
+  background: #f1f1f1;
+  display: block;
+  height: 100%;
+}
+
+.breadcrumbs {
+  margin: 0px 0px 21px -39px;
+}

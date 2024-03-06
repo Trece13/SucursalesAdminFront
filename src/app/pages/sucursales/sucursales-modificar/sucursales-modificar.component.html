@@ -1,0 +1,17 @@
+<div class="container animate__animated animate__fadeIn">
+  <div class="row">
+    <div class="col-6">
+      <div class="titulo">
+        {{ pagina.titulo }}
+      </div>
+      <div class="col-6">
+        <app-sucursales-form
+          *ngIf="registro"
+          [tipoForm]="pagina.tipo"
+          (dataEmitida1)="recibirData($event)"
+          [dataSeleccionada]="registro"
+        ></app-sucursales-form>
+      </div>
+    </div>
+  </div>
+</div>

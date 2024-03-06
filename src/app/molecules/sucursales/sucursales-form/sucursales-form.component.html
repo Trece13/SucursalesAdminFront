@@ -1,0 +1,49 @@
+<br>
+<br>
+<form [formGroup]="form">
+  <div class="forms-sucursal">
+    <app-form-field
+      [tipo]="'text'"
+      [control]="getFormControl('codigo')"
+      [campo]="dataCampos.dataBin.codigo"
+    ></app-form-field>
+    <br>
+    <app-form-field
+      [tipo]="'text'"
+      [control]="getFormControl('descripcion')"
+      [campo]="dataCampos.dataBin.descripcion"
+    ></app-form-field>
+    <br>
+    <app-form-field
+      [tipo]="'text'"
+      [control]="getFormControl('direccion')"
+      [campo]="dataCampos.dataBin.direccion"
+    ></app-form-field>
+    <br>
+    <app-form-field
+      [tipo]="'text'"
+      [control]="getFormControl('identificacion')"
+      [campo]="dataCampos.dataBin.identificacion"
+    ></app-form-field>
+    <br>
+    <app-form-field
+      [tipo]="'date'"
+      [control]="getFormControl('fechaCreacion')"
+      [campo]="dataCampos.dataBin.fechaCreacion"
+    ></app-form-field>
+    <br>
+    <app-form-field
+      [tipo]="'select'"
+      [control]="getFormControl('moneda')"
+      [campo]="dataCampos.dataBin.moneda"
+    ></app-form-field>
+    <br>
+    <br>
+    <div class="buttons-section">
+      <button class="btn" (click)="back()">Regresar</button>
+      <button class="btn  btn-azul" (click)="enviarData()">
+        {{ pagina?.btnAccion?.texto }}
+      </button>
+    </div>
+  </div>
+</form>

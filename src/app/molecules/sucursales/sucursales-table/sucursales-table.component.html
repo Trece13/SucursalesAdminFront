@@ -1,0 +1,21 @@
+<div class="contentHeaderUser">
+    <div class="col-md-6 contentTitle">
+        <app-title-page [titlePage]="title"></app-title-page>
+    </div>
+
+    <div class="contentButtom">
+        <div class="actions">
+            <app-button [getSettingsButton]="btnCreate" (emitterClickButton)="create()"></app-button>
+            <app-button [getSettingsButton]="btnUpdate" (emitterClickButton)="edit()"></app-button>
+            <app-button [getSettingsButton]="btnDelete" (emitterClickButton)="delete()"></app-button>
+        </div>
+    </div>
+</div>
+<table>
+    <thead>
+        <app-sucursales-table-title [getTitleTable]="titles"></app-sucursales-table-title>
+    </thead>
+    <tbody>
+        <app-sucursales-table-content [getContentTable]="dataTable" (itemSelected)="selectedCehckBox($event)"></app-sucursales-table-content>
+    </tbody>
+</table>

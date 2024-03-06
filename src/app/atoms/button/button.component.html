@@ -1,0 +1,16 @@
+<button style="white-space: nowrap"
+  class="{{ settingButtonDefalut.type }}"
+  (click)="clickButton()"
+  class='btn-main'
+  [disabled]="getSettingsButton.locked"
+>
+  <span 
+    *ngIf="settingButtonDefalut"
+    [class.material-icons-outlined]="settingButtonDefalut.out"
+    [class.material-icons]="!settingButtonDefalut.out"
+  >
+    {{ settingButtonDefalut.label }}
+  </span>
+  <ng-content select="img"></ng-content>
+  {{ settingButtonDefalut.text }}
+</button>
